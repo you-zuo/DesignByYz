@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#f1439c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gallery_blue">#f1439c</color>
+    <color name="pink">#f1439c</color>
+    <color name="view_gray">#e8e8e8</color>
+    <color name="IndexColorPrimaryDark">#17b3ee</color>
+    <color name="lanse_ss">#3DAFED</color>
+    <color name="white">#ffffff</color>
+    <color name="StartColorPrimaryDark">#fafafa</color>
+    <color name="lanse_s">#0EA4C9</color>
+    <color name="huise">#E3E3E3</color>
+    <color name="tab_gray">#9fa0a0</color>
+    <color name="tab_zdyvs">#94d752</color>
+    <color name="gray">#ffbbbbbb</color>
+    <color name="black_zi">#464749</color>
+    <color name="green_s">#97C95D</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="divider">#E4E0E1</color>
+    <color name="lanse">#5AABC4</color>
+    <color name="grid_zi">#8A8A8A</color>
+    <color name="red">#E94134</color>
+    <color name="qorange">#FF9800</color>
+    <color name="green_sp">#7BB746</color>
+    <color name="green_sg">#46B7B3</color>
+    <color name="lanse_o">#465BB8</color>
+    <color name="anhong">#9E46B7</color>
+    <color name="shenghuo_s">#C10504</color>
+    <color name="shenghuo">#D91F6A</color>
+    <color name="anhong_s">#AB3B8D</color>
+    <color name="lanse_so">#BADFE5</color>
+    <color name="commom_click_color_gray_half">#7fe0e0e0</color>
+    <color name="top_left_layout_color_black">#00101b</color>
+    <color name="top_layout_color_white">#ffffff</color>
+    <color name="center_view_color_blue">#31adfe</color>
+    <color name="center_bottom_text_color_red">#ff6000</color>
+    <color name="commom_click_color_gray">#e0e0e0</color>
+    <color name="top_left_layout_color_black_alpha">#b200101b</color>
+    <color name="center_bottom_sb_pg_color_blue_alpha">#a214a2f4</color>
+    <color name="center_bottom_sb_pg_color_blue">#14a2f4</color>
+    <color name="app_word_black">#333333</color>
+    <color name="red_sy">#FE6361</color>
+    <color name="green_sy">#38D4C9</color>
+    <color name="black_one">#a1000000</color>
+    <color name="black">#000000</color>
+    <color name="grayText">#434343</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="head_yellow">#ffe600</color>
+    <color name="btn_gray">#999999</color>
+    <color name="titlebar_color">#ffdc00</color> <!-- bar颜色 -->
+    <color name="black_light_color">#adadad</color> <!-- 淡色字体 -->
+    <color name="white_gray">#f5f5f9</color> <!-- 白灰色 -->
+    <color name="top_bg_shadow">#222222</color> <!-- 黑色阴影 -->
+
+
+    <color name="home_hive_1">#917AAD</color> <!-- 首页六边形 -->
+    <color name="home_hive_2">#3F5E71</color> <!-- 首页六边形 -->
+    <color name="home_hive_3">#E3398F</color> <!-- 首页六边形 -->
+
+    <color name="whitegrey">#FFF2F2F2</color>
+    <color name="yaopingf">#F56FC6</color>
+    <color name="yaopinge">#FF96CC</color>
+    <color name="yaopingtext">#707070</color>
+
+</resources>

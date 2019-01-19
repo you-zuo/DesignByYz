@@ -61,7 +61,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     /*
      * 沉浸式状态栏
      * */
-    protected boolean useStatusBarColor = false;//是否使用状态栏文字和图标为暗色，如果状态栏采用了白色系，则需要使状态栏和图标为暗色，android6.0以上可以设置
+    protected boolean useStatusFontColor = false;//是否使用状态栏文字和图标为暗色，如果状态栏采用了白色系，则需要使状态栏和图标为暗色，android6.0以上可以设置
 
     /**
      * 是否允许全屏
@@ -79,7 +79,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private boolean mIsVisibility = false;
 
     /**
-     * 是否允许全屏
+     * 是否允许全屏setAllowFullScreen
      **/
     public void setAllowFullScreen(boolean allowFullScreen) {
         this.mAllowFullScreen = allowFullScreen;
@@ -98,9 +98,9 @@ public abstract class BaseActivity extends AppCompatActivity {
      *
      * */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void setSetStatusBar(boolean isSetStatusBar, boolean isSetStatusBarColor) {
+    public void setStatusBarFontColot(boolean isSetStatusBar, boolean isSetStatusFontColor) {
         this.mIsSetStatusBar = isSetStatusBar;
-        this.useStatusBarColor = isSetStatusBarColor;
+        this.useStatusFontColor = isSetStatusFontColor;
 
         if (isSetStatusBar) {
             setStatusBar();
@@ -134,7 +134,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private void findView() {
         ll_title_bar = findViewById(R.id.ll_title_bar);
         titlebar = getStatusBarHeight(this);
-        ll_title_bar.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, titlebar));
+        ll_title_bar.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, titlebar-1));
         include_title = findViewById(R.id.include_title);
         Layout_title_back = findViewById(R.id.Layout_title_back);
         Layout_title_back.setOnClickListener(new View.OnClickListener() {
@@ -302,7 +302,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         return mTv_title_ok;
     }
 
-    //设置状态栏沉浸
+    //设置状态栏沉浸setStatusBar 不控制状态了字体颜色
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @SuppressLint("ResourceType")
     protected void setStatusBar() {
@@ -321,7 +321,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
         }
-        if (VersionUtils.isM() && !useStatusBarColor) {//android6.0以后可以对状态栏文字颜色和图标进行修改
+        if (VersionUtils.isM() && !useStatusFontColor) {//android6.0以后可以对状态栏文字颜色和图标进行修改
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
 

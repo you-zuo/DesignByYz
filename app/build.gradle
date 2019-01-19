@@ -29,9 +29,5 @@ dependencies {
     //butterknife
     implementation "com.jakewharton:butterknife:8.8.1"
     annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
-//Emoji表情：https://github.com/rockerhieu/emojicon
-    implementation 'io.github.rockerhieu:emojicon:+'
 
-//Emoji表情转换成各类可见字符串：https://github.com/vdurmont/emoji-java/
-    implementation 'com.vdurmont:emoji-java:+'
 }

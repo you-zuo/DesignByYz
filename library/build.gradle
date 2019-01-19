@@ -25,18 +25,21 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // Android 平台下须引入的一个依赖，主要用于线程控制
-    implementation 'io.reactivex:rxandroid:1.2.1'
+    api 'io.reactivex:rxandroid:1.2.1'
     // RxJava
-    implementation 'io.reactivex:rxjava:1.3.8'
+    api 'io.reactivex:rxjava:1.3.8'
     //QMUI
-    implementation 'com.qmuiteam:qmui:1.1.3'
+    api 'com.qmuiteam:qmui:1.1.3'
     //TabLayout
-    implementation 'com.android.support:design:28.0.0'
+    api 'com.android.support:design:28.0.0'
+    //hellodaemon后台保活
+    api 'com.xdandroid:hellodaemon:+'
+    api 'com.luolc:emoji-rain:0.1.1'
 }

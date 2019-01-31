@@ -6,37 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.luolc.emojirain.EmojiRainLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <com.luolc.emojirain.EmojiRainLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/group_emoji_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:per="10"
-        app:duration="7200"
         app:dropDuration="2400"
         app:dropFrequency="500"
+        app:duration="7200"
+        app:per="10"
         tools:context="com.luolc.emojirain.sample.MainActivity">
 
-        <Button
-            android:text="开始掉落"
-            android:id="@+id/mButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <Button
+               android:id="@+id/mButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="开始掉落" />
 
-        <Button
-            android:layout_marginTop="50dp"
-            android:id="@+id/mButtonStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="停止" />
-        <Button
-            android:layout_marginTop="100dp"
-            android:id="@+id/mButtons"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="跳转" />
+           <Button
+               android:id="@+id/mButtonStop"
+               android:layout_below="@id/mButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="停止" />
+
+           <Button
+               android:id="@+id/mButtons"
+               android:layout_below="@id/mButtonStop"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="上传" />
+
+           <Button
+               android:layout_below="@id/mButtons"
+               android:id="@+id/mShortMessage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="发送短信" />
+       </RelativeLayout>
 
     </com.luolc.emojirain.EmojiRainLayout>
 </android.support.constraint.ConstraintLayout>
